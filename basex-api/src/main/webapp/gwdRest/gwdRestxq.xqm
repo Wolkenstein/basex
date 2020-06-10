@@ -21,7 +21,7 @@ function gwd:start(
       <title>GWD REST API</title>
     </head>
     <body>
-      <p>Test</p>
+      <p>Test2</p>
     </body>
   </html>
 };
