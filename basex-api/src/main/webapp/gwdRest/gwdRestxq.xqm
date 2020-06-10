@@ -3,6 +3,9 @@
  :)
 module namespace gwd = 'http://hinkelmanns.at/gwd/';
 
+declare namespace tei = "http://www.tei-c.org/ns/1.0";
+declare variable $db := db:open('GWD');
+
 (:~
  : Generates a welcome page.
  : @return HTML page
@@ -21,7 +24,7 @@ function gwd:start(
       <title>GWD REST API</title>
     </head>
     <body>
-      <p>Test2</p>
+      <p>{$db//tei:title/text()}</p>
     </body>
   </html>
 };
